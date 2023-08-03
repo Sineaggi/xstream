@@ -765,8 +765,8 @@
               </manifest>
               <manifestEntries>
                 <Specification-Version>${project.info.majorVersion}.${project.info.minorVersion}</Specification-Version>
+                <Automatic-Module-Name>${automatic.module.name}</Automatic-Module-Name>
                 <Bundle-License>BSD-3-Clause</Bundle-License>
-                <Automatic-Module-Name>${jar.module.name}</Automatic-Module-Name>
                 <X-Compile-Release>${version.java.release}</X-Compile-Release>
               </manifestEntries>
             </archive>
@@ -1126,6 +1126,7 @@
     <version.xpp3>1.1.4c</version.xpp3>
 
     <jar.module.name>${project.artifactId}</jar.module.name>
+    <automatic.module.name>com.thoughtworks.${jar.module.name}</automatic.module.name>
     <javadoc.java.release>17</javadoc.java.release>
     <javadoc.link.javase>https://docs.oracle.com/en/java/javase/${javadoc.java.release}/docs/api/</javadoc.link.javase>
 
